@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.logo img {
+    height: 50px;
+    width: 50px;
+  }
+  .top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: 'Palanquin', sans-serif;
+
+}
+.menu > li:hover{
+    text-decoration: underline;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+.menu > li a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #fff; /* Set the text color to white */
+}
+
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+
+
+.navbar {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+}
+
+.logo {
+  text-align: start;
+  width: 200px;
+}
+
+.burger-menu {
+  display: none;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  display: grid;
+  grid-template-rows: 100px, 1fr;
+  grid-gap: 10px;
+  padding: 0;
+}
+
+.navbar li a {
+  margin: 0 10px;
+  text-decoration: none;
+
+}
+.Home {
+    background: rgb(64,64,64);
+    height: 100%;
+    background: radial-gradient(circle, rgb(55, 55, 55) 6%, rgba(0,0,0,1) 100%);
+}
+.Home 
+.button-59{
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid white;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: white;
+      background-color: #222;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
