@@ -108,6 +108,11 @@ body {
   margin: 0 10px;
 
 }
+.menu > li a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #fff; /* Set the text color to white */
+}
+
 
 .container {
     display: flex;

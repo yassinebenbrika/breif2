@@ -183,7 +183,7 @@ body {
   margin-top: 10px;
   cursor: pointer;
   margin-left: 50%;
-  /* transform: translateX(-50%); */
+  transform: translateX(-50%);
    
   }
   .btn{

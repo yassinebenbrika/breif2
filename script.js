@@ -27,7 +27,7 @@ buttons.forEach((button, index) => {
 });
 // *********************************************************************************************************************
 function validateForm(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     const name = document.querySelector('#name').value;
     const email = document.querySelector('#email').value;
@@ -36,7 +36,7 @@ function validateForm(event) {
 
     const namePattern = /^[a-zA-Z\s]{3,}$/;
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const cniPattern = /^[a-zA-Z]\d{5}$/; 
+    const cniPattern = /^[a-zA-Z]\d{5}$/;
     const phonePattern = /^\+212\d{9}$/;
 
     const nameValid = namePattern.test(name);
@@ -64,7 +64,10 @@ function validateForm(event) {
         return;
     }
 
-    alert('Thanks for your subscription'); 
+    alert('Thanks for your subscription');
+    
+    // Clear the form after a successful submission
+    event.target.reset();
 }
 
 const form = document.querySelector('form');
