@@ -169,8 +169,12 @@
   width: 25%;
   
 }
-.answer{
+.faq .answer {
   display: none;
+}
+
+.faq.active .answer {
+  display: block;
 }
 @media (max-width: 700px) {
     .menu-button-container {
