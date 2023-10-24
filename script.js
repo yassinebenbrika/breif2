@@ -1,4 +1,5 @@
 
+//   *********************************************************************************************************************
 const buttons = document.querySelectorAll('.button');
 const similarElements = document.querySelectorAll('.similar-element');
 

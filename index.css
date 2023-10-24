@@ -1,8 +1,6 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    background-attachment: fixed;
-    height: 100vh;
 }
 .logo img {
     height: 50px;
@@ -111,24 +109,69 @@ body {
 
 .navbar li a {
   margin: 0 10px;
-  text-decoration: none;
-
+  text-decoration: none; 
 }
 .Home {
-    background: rgb(64,64,64);
-    height: 100%;
-    background: radial-gradient(circle, rgb(55, 55, 55) 6%, rgba(0,0,0,1) 100%);
-}
-.Home 
-.button-59{
+  background: url(img/img/Untitled\ design\ \(2\).png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 65vh;
+  padding: 100px;
+  z-index: -1;
+ }
+ 
+ .Home-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  color: white;
+  text-align: start;
+ }
+ 
+ .button-59 {
+  display: inline-block;
   background-color: transparent;
-  color: #ffffff;
+  color: rgb(246, 246, 246);
   border: 1px solid white;
-  padding: 5px 10px;
-  margin-top: 10px;
-  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+ }
+ .button-59:hover{
+  transform: scale(1.1);
+ }
+.FAQ {
+  background: url(img/img/IMG.jpg); 
+  height: 120vh;
+}
+.FAQ h1{
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
+.Q div {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25%;
+  
+}
+.answer{
+  display: none;
+}
 @media (max-width: 700px) {
     .menu-button-container {
       display: flex;
@@ -166,5 +209,11 @@ body {
     }
     .menu > li:not(:last-child) {
       border-bottom: 1px solid #444;
+    }
+    .Home{
+      padding: 50px;
+    }
+    .Home-text{
+      font-size: 12px;
     }
   }

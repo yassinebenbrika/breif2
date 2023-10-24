@@ -113,7 +113,12 @@ body {
   color: #fff; /* Set the text color to white */
 }
 
-
+.Courses{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
 .container {
     display: flex;
     flex-direction: row;
@@ -143,7 +148,7 @@ body {
 
 .title {
     color: white;
-    font-size: 11px;
+    font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
     font-family: 'Palanquin', sans-serif;
@@ -228,5 +233,10 @@ footer {
     }
     .menu > li:not(:last-child) {
       border-bottom: 1px solid #444;
+    }
+  }
+  @media (max-width: 700px) {
+    .title{
+      font-size: 15px;
     }
   }
