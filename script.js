@@ -1,11 +1,17 @@
-document.querySelector('.question').addEventListener('click', function() {
-    var answer = this.querySelector('.answer');
-    if (answer.style.display === 'none') {
-       answer.style.display = 'block';
-    } else {
-       answer.style.display = 'none';
-    }
-   });
+// Select all FAQ items
+const faqItems = document.querySelectorAll('.faq');
+
+// Add click event listeners to each FAQ item
+faqItems.forEach((item) => {
+  const question = item.querySelector('h4');
+  const answer = item.querySelector('.answer');
+
+  question.addEventListener('click', () => {
+    // Toggle the 'answer' element's display property
+    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+  });
+});
+
 //   *********************************************************************************************************************
 const buttons = document.querySelectorAll('.button');
 const similarElements = document.querySelectorAll('.similar-element');
