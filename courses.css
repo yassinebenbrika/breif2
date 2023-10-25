@@ -232,6 +232,10 @@ footer {
   }
   @media (max-width: 700px) {
     .title{
-      font-size: 15px;
+      font-size: 11px;
     }
+    .read-more{
+      font-size: 10px;
+    }
+
   }

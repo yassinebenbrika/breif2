@@ -142,40 +142,38 @@
  .button-59:hover{
   transform: scale(1.1);
  }
-.FAQ {
-  background: url(img/img/IMG.jpg); 
-  height: 130vh;
-  display: flex;
-  justify-content: center;
-}
-.FAQ h1{
-  color: white;
-  display: flex;
-  justify-content: center;}
-
-.Q div {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+ .FAQ {
+  background: url(img/img/IMG.jpg);
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
   border-radius: 5px;
+ }
+ 
+ .Q {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 1rem;
+ }
+ 
+ .faq {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 100px;
-  
-}
-.faq .answer {
+ }
+ 
+ .faq h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+ }
+ 
+ .answer {
+  margin-top: 0.5rem;
   display: none;
-  height: fit-content;
-  width: 160px;
-  text-align: ;
-}
-
-.faq.active .answer {
-  display: block;
-}
+ }
 footer {
   text-align: center;
   display: flex;

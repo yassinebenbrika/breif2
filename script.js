@@ -1,11 +1,11 @@
-const faqs = document.querySelectorAll(".faq");
-
-faqs.forEach((faq) => {
-  faq.addEventListener("click", () => {
-    faq.classList.toggle("active");
-  });
-});
-
+document.querySelector('.question').addEventListener('click', function() {
+    var answer = this.querySelector('.answer');
+    if (answer.style.display === 'none') {
+       answer.style.display = 'block';
+    } else {
+       answer.style.display = 'none';
+    }
+   });
 //   *********************************************************************************************************************
 const buttons = document.querySelectorAll('.button');
 const similarElements = document.querySelectorAll('.similar-element');
