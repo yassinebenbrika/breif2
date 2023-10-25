@@ -154,6 +154,8 @@
   display: grid;
   grid-template-columns: repeat(2, 400px);
   gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
  }
  
  .faq {
