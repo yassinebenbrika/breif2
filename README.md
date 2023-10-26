@@ -10,4 +10,4 @@ Bienvenue sur le projet de site Web du restaurant Delecious Food. Ce site Web es
 * Clonez ce référentiel sur votre machine locale à l'aide de git clone.
 * Ouvrez les fichiers HTML dans votre navigateur Web pour naviguer à travers les différentes pages.
 ## Conception en figma
-https://www.figma.com/file/Tw72PmpNbSn0RffBA9ufwj/FITNESS-%26--GYM?type=design&node-id=0-1&mode=design&t=98Xgo3cpPpD9zuCM-0## Cette mon site web
+https://www.figma.com/file/Tw72PmpNbSn0RffBA9ufwj/FITNESS-%26--GYM?type=design&node-id=0-1&mode=design&t=98Xgo3cpPpD9zuCM-0## Cette mon FIGMA
