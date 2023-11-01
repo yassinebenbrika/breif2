@@ -1,13 +1,12 @@
-// Select all FAQ items
+
+// *********************************************************************************************************************
 const faqItems = document.querySelectorAll('.faq');
 
-// Add click event listeners to each FAQ item
 faqItems.forEach((item) => {
   const question = item.querySelector('h4');
   const answer = item.querySelector('.answer');
 
   question.addEventListener('click', () => {
-    // Toggle the 'answer' element's display property
     answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
   });
 });
@@ -16,23 +15,20 @@ faqItems.forEach((item) => {
 const buttons = document.querySelectorAll('.button');
 const similarElements = document.querySelectorAll('.similar-element');
 
-let selectedButtonIndex = -1; // Initialize with an invalid index
+let selectedButtonIndex = -1; 
 
 buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        // If the clicked button is already selected, deselect it
         if (index === selectedButtonIndex) {
             button.classList.remove('btn');
             button.textContent = 'Select';
-            selectedButtonIndex = -1; // No button is selected
+            selectedButtonIndex = -1; 
         } else {
-            // Deselect the previously selected button (if there was one)
             if (selectedButtonIndex !== -1) {
                 buttons[selectedButtonIndex].classList.remove('btn');
                 buttons[selectedButtonIndex].textContent = 'Select';
             }
 
-            // Select the clicked button
             button.classList.add('btn');
             button.textContent = 'Selected';
             selectedButtonIndex = index;
@@ -80,7 +76,6 @@ function validateForm(event) {
 
     alert('Thanks for your subscription');
     
-    // Clear the form after a successful submission
     event.target.reset();
 }
 
